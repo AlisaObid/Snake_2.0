@@ -1,4 +1,7 @@
 # Snake_2.0
+
+iled, use ctrl+c to cancel basic cre
+
 …or create a new repository on the command line
 echo "# Snake_2.0" >> README.md
 git init
