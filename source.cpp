@@ -6,15 +6,18 @@
 using namespace std;
 
 
+
+//----------------------
+#include "Graphic.h"
+
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(1100, 1100), "SFML Works!");
+	Graphic graphic(window);
 	while (window.isOpen()) // пока окно открыто
 	{
 		window.clear(sf::Color(172, 242, 172)); //цвет фона
-		sf::Font font; //создаем шрифт
 		sf::Event event; //показывает действи€ пользовател€
-		Graf gr;
 		//gr.draw(window, "¬ведите любой символ дл€ начала", 10, 10, 255, 255, 255);//рисую текст 
 		while (window.pollEvent(event)) //что-то происходит
 		{

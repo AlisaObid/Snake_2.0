@@ -1,4 +1,5 @@
 #include "mr_smey.h"
+using namespace std;
 
 
 Graf::Graf()
