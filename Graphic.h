@@ -13,8 +13,9 @@ public:
 	void drawText(std::string aString, 
 		std::int16_t x, std::int16_t y, sf::Color aColor);
 	void setBackground(sf::Color);
+	void drawMap(std::vector<std::string> aMap);
 private:
-	const sf::RenderWindow& mWindow;
+	sf::RenderWindow& mWindow;
 	sf::Font mFont; //סמחהאול רנטפע
 	sf::Text mText;
 };

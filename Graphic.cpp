@@ -20,5 +20,13 @@ void Graphic::drawText(std::string aString,
 
 void Graphic::setBackground(sf::Color aColor)
 {
-	mWindow.clear();
+	mWindow.clear(aColor);
+}
+
+void Graphic::drawMap(std::vector<std::string> aMap) //нарисовать карту
+{
+	for (int i = 0; i < aMap.size(); i++)
+	{
+		drawText(aMap[i], i * 10, 10, sf::Color(0, 0, 0));//рисую текст
+	}
 }
