@@ -9,16 +9,19 @@ using namespace std;
 
 //----------------------
 #include "Graphic.h"
+#include "Map.h"
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(1100, 1100), "SFML Works!");
+	sf::RenderWindow window(sf::VideoMode(1025, 1025), "SFML Works!");
 	Graphic graphic(window);
 	enum Direction { Up, Left, Down, Right };
+	Map map;
 	while (window.isOpen()) // пока окно открыто
 	{
+		window.clear();
 		Direction dir;
-		graphic.setBackground(sf::Color(2, 2, 2));
+		graphic.setBackground(sf::Color(15, 15, 15));
 		sf::Event event; //показывает действи€ пользовател€
 		while (window.pollEvent(event)) //что-то происходит
 		{
@@ -33,7 +36,7 @@ int main()
 		}
 		//smey z; //создание экземпл€ра класса smey
 		//z.Game(window); //вызов функции Game
-
+		map.draw(graphic);
 		window.display();
 	}
 }

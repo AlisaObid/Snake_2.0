@@ -13,7 +13,8 @@ public:
 	void drawText(std::string aString, 
 		std::int16_t x, std::int16_t y, sf::Color aColor);
 	void setBackground(sf::Color);
-	void drawMap(std::vector<std::string> aMap);
+	void drawMap(std::vector<std::vector<int>> aMap);
+	void drawApple(std::vector<std::vector<int>> aMap);
 private:
 	sf::RenderWindow& mWindow;
 	sf::Font mFont; //סמחהאול רנטפע
